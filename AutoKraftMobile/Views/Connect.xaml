@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoKraftMobile.Views.Connect">
+    <StackLayout Orientation="Vertical" Padding="20">
+        <Label Text="Connect to Server" x:Name="textView1" TextColor="Black" FontSize="25"/>
+        <Entry Placeholder="IP Address" x:Name= "edtIpAddress" Text="192.168.146.121" BackgroundColor="Black"/>
+        <Entry Placeholder="Port" x:Name= "edtPort" Text="9999" BackgroundColor="Black"/>
+        <Button Text="Connect" x:Name="btnConnect" Clicked="btnConnect_Clicked"/>
+
+        <Label Text="Leave the bottom box as is" TextColor="Black" Margin="0,20,0,0"/>
+        <Label Text="On the host machine:" TextColor="Black" Margin="0,10,0,0"/>
+        <Label Text="Windows:" TextColor="Black"/>
+        <Label Text="1: Open CMD (windows button -> type 'cmd')" TextColor="Black"/>
+        <Label Text="2: type 'ipconfig'" TextColor="Black"/>
+        <Label Text="3: Under the heading 'Wireless LAN adapter WiFi:'" TextColor="Black"/>
+        <Label Text="4: 'IPV4 Address' is the ip address used" TextColor="Black"/>
+    </StackLayout>
+</ContentPage>

@@ -10,4 +10,22 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.essentials\1.6.1\lib\monoandroid10.0\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Connect.xaml.cs">
+      <DependentUpon>Connect.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Connect.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
